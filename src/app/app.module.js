@@ -6,7 +6,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
+//import { BrowserModule } from '@angular/platform-browser';
+var angular2_polymer_1 = require("@vaadin/angular2-polymer");
 var app_component_1 = require("./app.component");
 var AppModule = (function () {
     function AppModule() {
@@ -15,9 +16,15 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent],
-        bootstrap: [app_component_1.AppComponent]
+        imports: [],
+        declarations: [
+            app_component_1.AppComponent,
+            angular2_polymer_1.PolymerElement('app-header-layout'),
+            angular2_polymer_1.PolymerElement('app-header'),
+            angular2_polymer_1.PolymerElement('app-toolbar')
+        ],
+        bootstrap: [app_component_1.AppComponent],
+        schemas: [core_1.CUSTOM_ELEMENTS_SCHEMA]
     })
 ], AppModule);
 exports.AppModule = AppModule;

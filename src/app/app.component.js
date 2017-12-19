@@ -8,14 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'Angular';
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<h1>Hello {{name}}</h1>",
+        template: "\n    <app-header-layout has-scrolling-region>\n      <app-header fixed>\n        <app-toolbar>\n          <div title spacer>All heroes</div>\n        </app-toolbar>\n      </app-header>\n      <div>My application content</div>\n    </app-header-layout>\n  ",
+        styles: ["\n    app-toolbar {\n      background: var(--primary-color);\n      color: var(--dark-theme-text-color);\n    }\n  "]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
