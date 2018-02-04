@@ -21,9 +21,6 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            angular2_polymer_1.PolymerElement('app-header-layout'),
-            angular2_polymer_1.PolymerElement('app-header'),
-            angular2_polymer_1.PolymerElement('app-toolbar'),
             angular2_polymer_1.PolymerElement('paper-input')
         ],
         bootstrap: [app_component_1.AppComponent],

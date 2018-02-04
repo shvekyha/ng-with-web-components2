@@ -10,9 +10,6 @@ import { AppComponent }  from './app.component';
   ],
   declarations: [
     AppComponent,
-    PolymerElement('app-header-layout'),
-    PolymerElement('app-header'),
-    PolymerElement('app-toolbar'),
     PolymerElement('paper-input')
   ],
   bootstrap:    [ AppComponent ],
