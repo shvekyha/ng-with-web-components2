@@ -1,16 +1,19 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA }      from '@angular/core';
-//import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { PolymerElement } from '@vaadin/angular2-polymer';
 
 import { AppComponent }  from './app.component';
 
 @NgModule({
-  imports:      [],
+  imports:      [
+    BrowserModule
+  ],
   declarations: [
     AppComponent,
     PolymerElement('app-header-layout'),
     PolymerElement('app-header'),
-    PolymerElement('app-toolbar')
+    PolymerElement('app-toolbar'),
+    PolymerElement('paper-input')
   ],
   bootstrap:    [ AppComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
